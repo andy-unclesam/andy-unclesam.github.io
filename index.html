@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Andreas Hemmeter – Texte zu KI, Feedback und selbstreguliertem Lernen</title>
+<meta name="description" content="Beiträge von Andreas Hemmeter, Mathematik- und Physiklehrer, zu KI im Unterricht, lernwirksamem Feedback und selbstreguliertem Lernen.">
+<meta name="author" content="Andreas Hemmeter">
+<meta property="og:title" content="Andreas Hemmeter – Beiträge">
+<meta property="og:description" content="Texte zu KI im Unterricht, lernwirksamem Feedback und selbstreguliertem Lernen.">
+<meta property="og:type" content="website">
+<meta name="color-scheme" content="light dark">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='22' fill='none' stroke='%231f4e79' stroke-width='7'/%3E%3Cpolygon points='30,4 44,10 30,16' fill='%231f4e79'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="stil.css">
+</head>
+<body>
+
+<header class="kopf">
+  <div class="kopf-inner">
+    <a class="marke" href="./">Andreas Hemmeter</a>
+    <nav class="kopf-nav" aria-label="Seite">
+      <a href="#beitraege">Beiträge</a>
+      <a href="#ueber">Über mich</a>
+      <a href="https://www.linkedin.com/in/andreas-hemmeter-46641b86" rel="me noopener" target="_blank">LinkedIn</a>
+      <button type="button" class="theme" id="theme" aria-label="Hell/Dunkel umschalten" title="Hell/Dunkel umschalten">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3a9 9 0 1 0 9 9c0-.5 0-1-.1-1.4A5.5 5.5 0 0 1 12 3z"/></svg>
+      </button>
+    </nav>
+  </div>
+</header>
+
+<main class="seite">
+
+  <section class="intro">
+    <p class="kicker">Unterricht · KI · Feedback · selbstreguliertes Lernen</p>
+    <h1>Was Schülerinnen und Schüler wirklich tun, wenn sie ein Arbeitsblatt bearbeiten – und was man daraus machen kann.</h1>
+    <p class="untertitel">Ich unterrichte Mathematik und Physik am Gymnasium und schreibe hier über Werkzeuge und Erfahrungen aus dem eigenen Unterricht: interaktive Arbeitsblätter, datenbasiertes Feedback und die Frage, wo KI einer Lehrkraft hilft – und wo nicht.</p>
+  </section>
+
+  <section id="beitraege" class="beitraege" aria-labelledby="beitraege-titel">
+    <h2 id="beitraege-titel">Beiträge</h2>
+
+    <!-- ── Neuer Beitrag: diesen <article>-Block kopieren und oben einfügen (neueste zuerst) ── -->
+    <article class="beitrag">
+      <p class="beitrag-meta"><time datetime="2026-09">September 2026</time><span aria-hidden="true">·</span><span>ca. 19 Minuten</span><span aria-hidden="true">·</span><span>zuerst erschienen auf <a href="https://joschafalck.de" rel="noopener" target="_blank">joschafalck.de</a></span></p>
+      <h3><a href="Lernschleife/">Die Lernschleife: Wie ein interaktives Arbeitsblatt zum individuellen Feedback für jedes Kind wird</a></h3>
+      <p>Ein interaktives Arbeitsblatt geht in die Lernplattform, die Bearbeitungen kommen als Daten zurück, aus den Daten entsteht für jedes Kind ein Drei-Ebenen-Feedback – und das geht wieder in die Lernplattform. Zwei KI-Assistenten, drei lokale Browser-Apps, die Bayern Cloud Schule; die KI arbeitet dabei ausschließlich bei der Lehrkraft, nie beim Kind. Mit Zahlen aus einem Jahr Unterricht und der Erkenntnis, dass die Lücke zwischen Endstand und Anhieb mehr über ein Kind sagt als jede Trefferquote.</p>
+      <p class="beitrag-link"><a href="Lernschleife/">Beitrag lesen →</a></p>
+    </article>
+    <!-- ── Ende Beitrag ── -->
+
+  </section>
+
+  <section id="ueber" class="ueber" aria-labelledby="ueber-titel">
+    <div class="ueber-initialen" aria-hidden="true">AH</div>
+    <div>
+      <h2 id="ueber-titel">Über mich</h2>
+      <p>Andreas Hemmeter unterrichtet Mathematik und Physik am Gymnasium Hilpoltstein, ist dort Systembetreuer und Mitglied der erweiterten Schulleitung und gibt als KI-Multiplikator Fortbildungen zu KI und selbstreguliertem Lernen. Die hier veröffentlichten Beiträge sind persönliche Texte; Kontakt und Austausch gern über <a href="https://www.linkedin.com/in/andreas-hemmeter-46641b86" rel="me noopener" target="_blank">LinkedIn</a>.</p>
+    </div>
+  </section>
+
+</main>
+
+<footer class="fuss">
+  <div class="fuss-inner">
+    <span>Texte und Abbildungen: <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.de" rel="license noopener" target="_blank">CC BY-SA 4.0</a>, soweit nicht anders angegeben</span>
+    <span><a href="impressum.html">Impressum &amp; Datenschutz</a></span>
+  </div>
+</footer>
+
+<script>
+(function () {
+  var root = document.documentElement, btn = document.getElementById('theme');
+  var t; try { t = localStorage.getItem('theme'); } catch (e) {}
+  if (t === 'dark' || t === 'light') root.setAttribute('data-theme', t);
+  btn.addEventListener('click', function () {
+    var dunkel = root.getAttribute('data-theme') === 'dark' ||
+      (!root.getAttribute('data-theme') && window.matchMedia('(prefers-color-scheme: dark)').matches);
+    var neu = dunkel ? 'light' : 'dark';
+    root.setAttribute('data-theme', neu);
+    try { localStorage.setItem('theme', neu); } catch (e) {}
+  });
+})();
+</script>
+</body>
+</html>
