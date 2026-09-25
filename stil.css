@@ -66,3 +66,13 @@ h2 { font-weight: 600; font-size: 1.05rem; font-family: var(--sans); letter-spac
 .rechtlich h2 { margin-top: 2.2rem; }
 .rechtlich p, .rechtlich address { margin: 0 0 1rem; font-style: normal; }
 .platzhalter { background: rgba(232,113,10,0.15); border-radius: 4px; padding: 0 0.3rem; }
+
+/* Logo */
+:root { --logo-a: #8fb6de; }
+:root[data-theme="dark"] { --logo-a: #1f4e79; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --logo-a: #1f4e79; } }
+.logo { width: 28px; height: 28px; display: block; flex-shrink: 0; }
+.logo .h { fill: var(--accent); } .logo .a { stroke: var(--logo-a); }
+.marke { display: inline-flex; align-items: center; gap: 0.6rem; }
+.logo-kachel { width: 3rem; height: 3rem; border-radius: 12px; background: var(--accent); display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+.logo-kachel .logo { width: 2.3rem; height: 2.3rem; } .logo-kachel .logo .h { fill: #fff; } .logo-kachel .logo .a { stroke: #8fb6de; }
