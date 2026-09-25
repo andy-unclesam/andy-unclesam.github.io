@@ -33,24 +33,28 @@
 
 <main class="seite">
 
-  <section class="intro">
+  <section class="hero">
+    <div class="hero-logo" aria-hidden="true"><svg class="logo" viewBox="0 0 64 64" aria-hidden="true" focusable="false"><g class="h"><rect x="12" y="6" width="9" height="52" rx="2"/><rect x="43" y="6" width="9" height="52" rx="2"/><rect x="12" y="36" width="40" height="8" rx="2"/></g><g class="a" fill="none" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"><path d="M16.5 58 L22 17 H42 L47.5 58"/><path d="M19 40 H45"/></g></svg></div>
+    <h1 class="hero-name">Andreas Hemmeter</h1>
     <p class="kicker">Unterricht · KI · Feedback · selbstreguliertes Lernen</p>
-    <h1>Was Schülerinnen und Schüler wirklich tun, wenn sie ein Arbeitsblatt bearbeiten – und was man daraus machen kann.</h1>
-    <p class="untertitel">Ich unterrichte Mathematik und Physik am Gymnasium und schreibe hier über Werkzeuge und Erfahrungen aus dem eigenen Unterricht: interaktive Arbeitsblätter, datenbasiertes Feedback und die Frage, wo KI einer Lehrkraft hilft – und wo nicht.</p>
+    <p class="untertitel">Mathematik- und Physiklehrer am Gymnasium. Ich schreibe hier über Werkzeuge und Erfahrungen aus dem eigenen Unterricht: interaktive Arbeitsblätter, datenbasiertes Feedback und die Frage, wo KI einer Lehrkraft hilft – und wo nicht.</p>
   </section>
 
   <section id="beitraege" class="beitraege" aria-labelledby="beitraege-titel">
     <h2 id="beitraege-titel">Beiträge</h2>
+    <div class="kacheln">
 
-    <!-- ── Neuer Beitrag: diesen <article>-Block kopieren und oben einfügen (neueste zuerst) ── -->
-    <article class="beitrag">
-      <p class="beitrag-meta"><time datetime="2026-09">September 2026</time><span aria-hidden="true">·</span><span>ca. 19 Minuten</span><span aria-hidden="true">·</span><span>zuerst erschienen auf <a href="https://joschafalck.de" rel="noopener" target="_blank">joschafalck.de</a></span></p>
-      <h3><a href="Lernschleife/">Die Lernschleife: Wie ein interaktives Arbeitsblatt zum individuellen Feedback für jedes Kind wird</a></h3>
-      <p>Ein interaktives Arbeitsblatt geht in die Lernplattform, die Bearbeitungen kommen als Daten zurück, aus den Daten entsteht für jedes Kind ein Drei-Ebenen-Feedback – und das geht wieder in die Lernplattform. Zwei KI-Assistenten, drei lokale Browser-Apps, die Bayern Cloud Schule; die KI arbeitet dabei ausschließlich bei der Lehrkraft, nie beim Kind. Mit Zahlen aus einem Jahr Unterricht und der Erkenntnis, dass die Lücke zwischen Endstand und Anhieb mehr über ein Kind sagt als jede Trefferquote.</p>
-      <p class="beitrag-link"><a href="Lernschleife/">Beitrag lesen →</a></p>
-    </article>
-    <!-- ── Ende Beitrag ── -->
+      <!-- ── Neuer Beitrag: diesen <a class="kachel">-Block kopieren und oben einfügen (neueste zuerst) ── -->
+      <a class="kachel" href="Lernschleife/">
+        <p class="kachel-meta"><time datetime="2026-09">September 2026</time><span aria-hidden="true">·</span><span>ca. 20 Min.</span></p>
+        <h3>Die Lernschleife</h3>
+        <p class="kachel-unter">Wie ein interaktives Arbeitsblatt zum individuellen Feedback für jedes Kind wird</p>
+        <p class="kachel-text">Arbeitsblatt → Lernplattform → Dashboard → Drei-Ebenen-Feedback → zurück in die Lernplattform. Zwei KI-Assistenten, drei lokale Browser-Apps – die KI arbeitet nur bei der Lehrkraft, nie beim Kind.</p>
+        <p class="kachel-link"><span>Beitrag lesen →</span><span class="kachel-quelle">zuerst auf joschafalck.de</span></p>
+      </a>
+      <!-- ── Ende Beitrag ── -->
 
+    </div>
   </section>
 
   <section id="ueber" class="ueber" aria-labelledby="ueber-titel">
