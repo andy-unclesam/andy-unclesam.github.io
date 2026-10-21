@@ -89,6 +89,7 @@ h2 { font-weight: 600; font-size: 1.05rem; font-family: var(--sans); letter-spac
 .kachel { display: flex; flex-direction: column; gap: 0.35rem; background: var(--card); border: 1px solid var(--line); border-radius: 16px; padding: 1.2rem 1.3rem 1.1rem; text-decoration: none; color: inherit; box-shadow: var(--shadow); transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s; position: relative; overflow: hidden; }
 .kachel::before { content: ""; position: absolute; left: 0; top: 0; bottom: 0; width: 5px; background: var(--accent); }
 .kachel:hover { transform: translateY(-2px); border-color: var(--accent); }
+.kachel.werkzeug::before { background: var(--ink-3); }
 .kachel-meta { font-family: var(--sans); font-size: 0.8rem; color: var(--ink-3); display: flex; gap: 0.45rem; margin: 0; }
 .kachel h3 { font-size: 1.35rem; line-height: 1.2; font-weight: 600; margin: 0.15rem 0 0; letter-spacing: -0.005em; }
 .kachel-unter { font-size: 1rem; line-height: 1.4; color: var(--ink-2); margin: 0 0 0.35rem; }
