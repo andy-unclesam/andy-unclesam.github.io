@@ -98,3 +98,12 @@ h2 { font-weight: 600; font-size: 1.05rem; font-family: var(--sans); letter-spac
 .kachel-quelle { font-weight: 400; font-size: 0.78rem; color: var(--ink-3); }
 .kachel:hover .kachel-link { color: var(--accent); }
 .ueber { max-width: 46rem; margin-left: auto; margin-right: auto; }
+
+/* Porträt im Abschnitt „Über mich“ */
+.ueber { align-items: center; }
+.portrait { flex-shrink: 0; display: block; width: 7.5rem; }
+.portrait img { display: block; width: 100%; height: auto; aspect-ratio: 4 / 5; object-fit: cover; border-radius: 12px; box-shadow: var(--shadow); }
+@media (max-width: 34rem) {
+  .ueber { flex-direction: column; align-items: flex-start; }
+  .portrait { width: 6.5rem; }
+}
